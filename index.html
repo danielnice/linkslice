@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- General Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <!-- SEO Meta -->
+    <title>Link Slice - A simple way to create google marketing URLs</title>
+    <meta name="description" content="Link Slice is a website that helps digital marketers create their own custom google campaign tracking urls.  Our simple form makes campaign link building easy!">
+    <meta name="robots" content="index,follow">
+
+    <!-- CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="style.min.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74758171-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </head>
+
+  <body class="gradient">
+    <div class="cont">
+      <div class="tag">
+        <img class="logo" src="assets/logo.png" alt="Link Slice Logo"/>
+        <p>A simple way to create google marketing URLs</p>
+      </div>
+      <form id="builder">
+        <div class="field large">
+          <label class="label" for="url">Your URL</label>
+          <input id="url" name="url" type="text" placeholder="http://www.linkslice.com">
+          <div class="error-text blank">Please enter a URL</div>
+          <div class="error-text incorrect">Please include http:// or https:// in your URL</div>
+        </div>
+        <div class="field dropdown">
+          <div class="label">Source</div>
+          <div class="fill-box">
+            <span class="value">Select a Source</span>
+          </div>
+          <div id="click" class="btn"></div>
+          <ul id='list'>
+            <li>
+              <input class="source" type="radio" name="source" id="facebook" value="facebook">
+              <label for="facebook">Facebook</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="twitter" value="twitter">
+              <label for="twitter">Twitter</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="linkedin" value="linkedin">
+              <label for="linkedin">LinkedIn</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="email" value="email">
+              <label for="email">Email</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="blogwebsite" value="blogwebsite">
+              <label for="blogwebsite">Blog or Website</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="ppc" value="ppc">
+              <label for="ppc">Pay Per Click</label>
+            </li>
+            <li>
+              <input class="source" type="radio" name="source" id="other" value="other">
+              <label for="other">Other</label>
+            </li>
+          </ul>   
+        </div>
+        <div class="field">
+          <label class="label" for="campaign">Campaign</label>
+          <input id="campaign" name="campaign" type="text" placeholder="Your Kick Ass Campaign">
+          <div class="error-text blank">Please enter a Campaign name</div>
+        </div>
+      </form>
+      <div id="sample-url">
+        http://www.linkslice.com/?utm_source=facebook&utm_medium=post&utm_campaign=Your%20Kick%20Ass%20Campaign
+      </div>
+      <div id="copy" data-clipboard-target="#sample-url">COPY URL</div>
+    </div>
+    <div class="footer">
+      Created and managed by <a href="https://www.linkedin.com/in/danielcnice" target="_blank">Daniel Nice</a> and <a href="https://www.linkedin.com/in/jamesdharper3" target="_blank">James Harper</a>
+    </div>
+  </body>
+</html>
